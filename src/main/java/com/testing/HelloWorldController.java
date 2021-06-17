@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * A very basic Hello World controller which returns the hostname.
  *
- * @author kim
+ * @author kim/shy
  *
  */
 @RestController
