@@ -128,7 +128,20 @@
 		</dependency>
 
 	</dependencies>
-
+	<!-- Artifactory tools -->
+	<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>5c66c0a46a30-releases</name>
+        <url>http://localhost:8081/artifactory/java_jfrog</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>5c66c0a46a30-snapshots</name>
+        <url>http://localhost:8081/artifactory/java_jfrog</url>
+    </snapshotRepository>
+</distributionManagement>
+<!-- Artifactory tools -->
 	<build>
 
 
