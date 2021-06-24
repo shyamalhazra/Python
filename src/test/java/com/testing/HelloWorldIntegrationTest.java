@@ -28,16 +28,16 @@ public class HelloWorldIntegrationTest {
     @Autowired
     private TestRestTemplate template;
 
-    private Map<String, String> result;
-    private String url;
+    
+   
     
     @Test
     @SuppressWarnings({ "rawtypes", "unchecked" })
     public void responseShouldContainHelloWorldKey() {
-        url = "http://localhost:" + port + "/";
+    	private String url = "http://localhost:" + port + "/";
         
         ResponseEntity<Map> response = template.getForEntity(url, Map.class);
-        result = response.getBody();
+        private Map<String, String> result = response.getBody();
 
         assertThat(result.containsKey(MESSAGE_KEY)).isTrue();
         assertThat(result.get(MESSAGE_KEY)).isEqualTo("Hello World!");

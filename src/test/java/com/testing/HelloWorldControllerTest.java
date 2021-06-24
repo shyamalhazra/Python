@@ -14,14 +14,14 @@ import org.mockito.junit.MockitoJUnitRunner;
 @RunWith(MockitoJUnitRunner.class)
 public class HelloWorldControllerTest {
 
-    private Map<String, String> result;
+    
     
     @InjectMocks
     private HelloWorldController controller;
 
     @Test
     public void responseShouldContainHelloWorldKey() throws UnknownHostException {
-        result = controller.helloWorld();
+    	private Map<String, String> result = controller.helloWorld();
         
         assertThat(result).containsKey(MESSAGE_KEY);
     }
