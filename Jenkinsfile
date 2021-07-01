@@ -10,7 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                mvn -version
+                sh 'mvn -version'
             }
         }
         stage('Deploy') {
